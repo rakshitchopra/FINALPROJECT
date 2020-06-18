@@ -1,0 +1,70 @@
+{
+    "allStocks": [
+      {
+        "orderId": 1,
+        "noOfShares": 5,
+        "companyName": "Rolex",
+        "sharePrice": 100,
+        "orderType": "buy"
+      },
+      {
+        "orderId": 2,
+        "noOfShares": 15,
+        "companyName": "Microsoft",
+        "sharePrice": 1000,
+        "orderType": "sell"
+      },
+      {
+        "orderId": 3,
+        "noOfShares": 5,
+        "companyName": "IBM",
+        "sharePrice": 105,
+        "orderType": "buy"
+      },
+      {
+        "orderId": 4,
+        "noOfShares": 5,
+        "companyName": "Apple",
+        "sharePrice": 100,
+        "orderType": "buy"
+      },
+      {
+        "orderId": 5,
+        "noOfShares": 3,
+        "companyName": "Infosys",
+        "sharePrice": 10,
+        "orderType": "sell"
+      },
+      {
+        "orderId": 6,
+        "noOfShares": 1,
+        "companyName": "HP",
+        "sharePrice": 110,
+        "orderType": "buy"
+      },
+      {
+        "orderId": 7,
+        "noOfShares": 5,
+        "companyName": "cognizant",
+        "sharePrice": 100,
+        "orderType": "sell"
+      },
+      {
+        "orderId": 9,
+        "noOfShares": 3,
+        "companyName": "tech mahindra",
+        "sharePrice": 108,
+        "orderType": "sell"
+      },
+      {
+        "orderId": 10,
+        "noOfShares": 1,
+        "companyName": "L&T",
+        "sharePrice": 190,
+        "orderType": "buy"
+      }
+    ],
+    "buy": [],
+    "sell": []
+  }
+  

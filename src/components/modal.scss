@@ -1,0 +1,50 @@
+.add-event{
+    width: fit-content;
+    margin: auto;
+    .heading{
+        text-transform: capitalize;
+        padding: 5px;
+        font-weight: 500;
+        font-size: 1.3rem;
+    }
+    input{
+        border: 2px solid ;
+        padding: 5px;
+        border: 2px solid #2d5896;
+        &:hover{
+            border: 2px solid #2d5896;
+        }
+    }
+}
+
+.modal-user{
+    .event-list{
+        .event{
+            border: 2px solid #2d5896;
+            padding: 10px;
+            margin: 1vh;
+            border-radius: 10px;
+            background-color: #2d5896;
+            color: white;
+            text-align: center;
+            &:hover{
+                background-color: white;
+                color: #2d5896;
+                cursor: pointer;
+                
+            }
+        }
+    }
+}
+.disable{
+    opacity: 1;
+    background-color: gray;
+    pointer-events: none;
+}
+.error{
+    text-align: center;
+    color: tomato;
+    text-transform: capitalize;
+    font-size: 15px;
+    margin-top: 2vh;
+}

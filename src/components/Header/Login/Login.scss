@@ -1,0 +1,65 @@
+.text-center{
+    text-align: center;
+}
+.pt-10{
+    padding-top : 2vh;
+}
+.login-form{
+    max-width: fit-content;
+    margin: auto;
+    .error{
+        text-align: center;
+        font-size: 10px;
+        text-transform: capitalize;
+        margin-bottom: 5vh;
+        color: red;
+       }
+    .input{
+        padding-bottom: 5vh;
+        .label{
+            text-transform: uppercase;
+            b{
+                text-transform: capitalize;
+            }
+            
+        }
+        input{
+            border-radius: 10px;
+            border: 1px solid #2d5896;
+            width: 90%;
+            padding: 10px;
+            outline: none;
+            
+            font-size: 20px;
+            &:focus{
+             border: 1px solid blue;
+            }
+        }
+        
+        
+    }
+    .login-button{
+        margin: auto;
+            width: fit-content;
+            padding-bottom: 3vh;
+            button{
+            cursor: pointer;
+            padding: 10px;
+            border: none;
+            background-color: #2d5896;
+            border-radius: 10px;
+            color: white;
+            line-height: 1.5rem;
+            vertical-align: middle;
+            font-size: 1.5rem;
+            transition-duration: 200ms;
+            &:hover{
+                background-color: #38359d;
+            }
+    }
+    }
+    .login-disable{
+        pointer-events: none;
+        opacity: 0.6;
+    }
+}

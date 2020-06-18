@@ -1,0 +1,163 @@
+.header{
+    display: flex;
+    position: sticky;
+    top:0;
+    background-color: white;
+    border-bottom:2px solid #2d5896;
+    z-index: 3;
+    color: #2d5896;
+    justify-content: space-between;
+    font-size: 1.5rem;
+.header-left{
+        display: flex;
+        transition-duration: 200ms;
+        
+    }
+    .header-right{
+        display: flex;
+        .login-options{
+            // opacity: 0;
+            position: fixed;
+            top:50px;
+            right: 0;
+            -webkit-box-shadow: 0px 0px 38px -9px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 0px 38px -9px rgba(0,0,0,0.75);
+            box-shadow: 0px 0px 38px -9px rgba(0,0,0,0.75);
+            background-color: white;
+            .item{
+                padding: 0px 10px;
+                text-transform: uppercase;
+                font-size: 20px;
+                &:hover{
+                    background-color: #2d5896;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+            
+           
+        }
+        .icon{
+            font-size: 30px;
+            padding: 5px;
+        }
+        .btn-login{
+            font-weight: 600;
+            padding: 10px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition-duration: 200ms;
+            box-shadow: none;
+            
+            background-color: white;
+            color: #2d5896;
+            
+            &:hover{
+                box-shadow: none;
+                padding: 10px 30px;
+                background-color: #2d5896;
+                color: white;
+                
+                
+            }
+            
+        }
+        
+        .signup{
+            transition-duration: 300ms;
+            &:hover::after{
+                content: 'click to host an event';
+                width: 100px;
+                color: black;
+                font-size: .7rem;
+                background-color: white;
+                border-radius: 5px;
+                top:50px;
+                right:10px;
+                position: absolute;
+                z-index: 1000;
+                padding: 2px 4px;
+            }
+        }
+        .login{
+            transition-duration: 300ms;
+            &:hover::after{
+                content: 'only for signed up users';
+                width: 100px;
+                color: black;
+                font-size: .7rem;
+                background-color: white;
+                border-radius: 5px;
+                top:50px;
+                right:100px;
+                position: absolute;
+                z-index: 1000;
+                padding: 2px 4px;
+            }
+        }
+        
+    }
+    .header-item{
+        font-weight: 400;
+        padding: 10px;
+        cursor: pointer;
+        transition-duration: 220ms;
+        &:hover{
+            -webkit-box-shadow: 0px 0px 21px 5px rgba(133,129,133,1);
+            -moz-box-shadow: 0px 0px 21px 5px rgba(133,129,133,1);
+            box-shadow: 0px 0px 21px 5px rgba(133,129,133,1);
+            box-shadow: none;
+            padding: 10px 30px;
+            background-color: #2d5896;
+            color: white;
+        }
+        .sidebar{
+            display: none;
+        }
+    }
+    .title{
+        transition-duration: 300ms;
+        &:hover::after{
+            content: 'Exchange';
+            width: 100px;
+            color: black;
+            font-size: .7rem;
+            background-color: white;
+            border-radius: 5px;
+            top:50px;
+            left:20px;
+            text-align: center;
+            position: absolute;
+            z-index: 1000;
+            padding: 2px 4px;
+        }
+    }
+
+}
+
+@media screen and (max-width:800px){
+    .header{
+        .header-right{
+            .btn-login{
+                font-size: 18px;
+                padding-left: 2px;
+            }
+        }
+        .header-left{
+            display: block;
+            height:50px;
+            overflow: hidden;
+        }
+        .header-item{
+            .sidebar{
+                display: inline-block;
+            }
+            &:hover{
+                box-shadow: none;
+                padding: 10px;
+                background-color: white;
+                color: #2d5896;
+            }
+        }
+    }
+}

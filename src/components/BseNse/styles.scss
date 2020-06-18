@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+$tile-color : rgba(79,79,79,0.4);
+.bse-nse{
+  padding-top: 5vh;
+  background-color: #2d5896 !important;
+  min-height: 90vh;
+}
+*{
+  font-family: 'Roboto', sans-serif;
+}
+.order-book{
+  margin-top: 3vh;
+  display: flex;
+  justify-content: center;
+  
+  .stock{
+    margin: 2vh;
+    flex: 1;
+    .heading{
+      color: white;
+      width: fit-content;
+      margin: auto;
+      padding: 5px 10px;
+      border-radius:3px;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    .buy{
+      background-color: green;
+      // &:hover{
+      //   background-color: #1e5c50;
+      // }
+    }
+    .sell{
+      background-color: tomato;
+      // &:hover{
+      //   background-color: red;
+      // }
+    }
+    
+  }
+}
+.tab{
+  display: flex;
+  justify-content: space-around;
+  .option{
+    background-color:$tile-color;
+    padding: 3px 8px;
+    border-radius: 10px;
+    color: white;
+    text-transform: uppercase;
+    opacity:0.5;
+    cursor: pointer;
+  }
+  .selected{
+    opacity: 1;
+  }
+}
+.stock-tile{
+  display:flex;
+  max-width: 450px;
+  margin: auto;
+  margin-top:2vh;
+  justify-content: space-between;
+  background-color: $tile-color;
+  padding: 2vh;
+  border-radius: 10px;
+  color: white;
+  align-items: center;
+  .stock-info{
+    text-transform: capitalize;
+    .stock-name{
+      text-transform: uppercase;
+      max-width:30vw;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      font-size: 24px;
+      font-weight: 500;
+    }
+      .stock-number{
+        font-size: 10px;
+    }
+  }
+
+  .stock-action{
+    display: flex;
+    .btn{
+      padding: 1vh 3vh;
+      background-color: black;
+      margin: 1vh;
+      text-transform: uppercase;
+      border-radius:6px;
+      transition-duration: 200ms;
+      cursor: no-drop;
+      color: white;
+    }
+    .buy{
+      background-color: green;
+      // &:hover{
+      //   background-color: #1e5c50;
+      // }
+    }
+    .sell{
+      background-color: tomato;
+      // &:hover{
+      //   background-color: red;
+      // }
+    }
+  }
+}
